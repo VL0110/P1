@@ -1,0 +1,479 @@
+
+/*Version tablette 768px à 992px specifications*/
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+body
+{
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+/* 1)Eléments principaux de la page */
+
+main 
+{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;   
+}
+#hebergements
+{
+    order: -2;
+}
+#populaires
+{
+    order: -3;
+}
+#activites
+{
+    order: -1;
+}
+/* 2)Navigation */
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav a
+{
+    color: #181818;
+    font-size: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-top: 3px solid transparent;
+    margin: -97px 0px 0px 0px ;
+}
+nav :hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 50px;
+}
+#logobooki img
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 110px;
+    height: 70px;
+    object-fit: cover;
+    margin: 20px 0px 0px 30px ;
+}
+
+/* 3)Header */
+
+header h1
+{
+    font-size: 150% ;
+    margin: 40px 5px 0px 35px ;
+}
+header h3
+{
+    color : #606060 ;
+    font-size: 120% ;
+    font-weight: normal ;
+    margin: 5px 5px 30px 30px ;
+}
+
+/* 4)Barre de recherche */
+
+#search
+{
+    margin: 10px 10px 10px 40px ; 
+}
+#search1 i
+{
+    font-size: 120%;
+    padding-top: 5px;
+    height: 26px;
+    width: 25px;
+}
+#search2 input 
+{
+    height: 50px;
+}
+#search #search3 a
+{
+    font-size: 100%;
+    padding-bottom: 5px;
+    padding-top: 5PX;
+}
+/* 5)Filtres */
+
+#filtres h2
+{
+    font-size: 140% ;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 10px 10px 10px 40px ;
+}
+#economique 
+{
+    height: 45px;
+    width: 205px ;
+}
+#economique h3
+{
+    font-size: 120% ;
+    position: absolute;
+    top: 5px;
+    right: 23px;
+}
+
+#economique i
+{
+   font-size: 22px ;
+   position: absolute;
+   top: 0px;
+}
+#famille 
+{
+    height: 45px;
+    width: 150px ;
+}
+#famille h3 
+{
+    font-size: 120% ;
+    position: absolute;
+    top: 5px;
+    right: 23px;
+}
+#famille i
+{
+   font-size: 22px ;
+}
+#romantique
+{
+    height: 45px;
+    width: 200px ;  
+}
+#romantique h3
+{
+    font-size: 120% ;
+    position: absolute;
+    top: 5px;
+    right: 23px;
+}
+#romantique i
+{
+    font-size: 22px ;
+}
+#animaux
+{
+    height: 45px;
+    width: 260px ;
+    position: relative;
+    left: 5%;
+}
+#animaux h3
+{
+    font-size: 120% ;
+    position: absolute;
+    top: 5px;
+    right: 23px;
+}
+#animaux i
+{
+    font-size: 22px ;
+}
+
+aside 
+{
+    font-size: 75%;
+    margin-top: 1%;
+}
+aside i
+{
+    height: 20px;
+    width: 25px ;
+    font-size: 120%;
+    padding-top: 4px;
+}
+
+/* 6)Main */
+/* a)Populaires */
+#populaires
+{
+    width: 100%;  
+    height: 850px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 0px 0px ;  
+}
+#populaires h2 
+{
+    font-size: 150%;
+    padding-right: 55%;
+    margin: 25px 40px 25px 30px ;  
+}
+
+#populaires img
+{
+    width: 43%;
+    height: 200px;
+}
+#soleil
+{
+    width: 85%;
+    height: 200px;
+}
+#soleil h4
+{
+    font-size: 130%;
+    font-weight: bold;
+    margin: 0px 50px 0px 10px ;
+    position: absolute;
+    left: 45%;
+    top: 25px;
+}
+#soleil p
+{
+    font-size:  100%;
+    position: absolute;
+    top: 55px;
+    left: 46%;
+}
+#eau
+{
+    width: 85%;
+    height: 200px;
+}
+#eau h4
+{
+    font-size: 130%;
+    font-weight: bold;
+    margin: 0px 50px 0px 10px ;
+    position: absolute;
+    left: 45%;
+    top: 25px;
+}
+#eau p
+{
+    font-size: 100%;
+    position: absolute;
+    top: 70px;
+    left: 46%;
+}
+#bleu
+{
+    width: 85%;
+    height: 200px;
+}
+#bleu h4
+{
+    font-size: 130%;
+    font-weight: bold;
+    margin: 0px 50px 0px 10px ;
+    position: absolute;
+    left: 46%;
+    top: 25px;
+}
+#bleu p
+{
+    font-size:  100%;
+    position: absolute;
+    top: 70px;
+    left: 47%;
+}
+#etoile i
+{
+    font-size: 150%;
+    position: absolute;
+    top: 25px;
+    left: 87%;
+}
+
+/* b)Hebergements */
+#hebergements 
+{
+    width: 100%; 
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 10px 0px ;  
+}
+#hebergements h2
+{ 
+    font-size: 150%;
+    padding-right: 25%;
+    margin: 35px 200px 10px 10px ;  
+}
+#hebergements h4
+{
+    font-size: 120%;
+}
+#hebergements p
+{
+    font-size: 80%;
+}
+#cannebiere
+{
+    width: 43%;
+    height: 230px;
+    margin: 25px 15px 15px 10px ;
+}
+#port
+{
+    width: 43%;
+    height: 230px;
+    margin: 25px 10px 15px 15px ;
+}
+#mouettes
+{
+    width: 43%;
+    height: 230px;
+    margin: 25px 15px 15px 10px ;
+}
+#mer
+{
+    width: 43%;
+    height: 230px;
+    margin: 25px 10px 15px 15px ;
+}
+#panier
+{
+    width: 43%;
+    height: 230px;
+    margin: 25px 15px 15px 10px ;
+}
+#amina
+{
+    width: 43%;
+    height: 230px;
+    margin: 25px 10px 15px 15px ;
+}
+#hebergements h5
+{
+    font-size: 120%;
+    padding-right: 73%;
+    margin: 20px 10px 50px 0px ;  
+}
+
+/* c)Activites */
+
+#activites
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 10px 0px ;  
+}
+#activites h2
+{
+    font-size: 150%;
+    padding-right: 290px;
+    margin: 25px 130px 10px 20px ; 
+}
+#activites h4
+{
+    font-size:  130%;
+    font-weight: bold;
+    padding-top: 5px;
+    margin: 5px 5px 10px 15px ; 
+}
+#vieux
+{
+    width: 45%;
+    height: 520px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+    margin: 0px 25px 0px 0px;
+}
+#vieux img
+{
+    width: 100%;
+    height: 460px;
+}
+#pomegues
+{
+    width: 90%;
+    height: 240px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+}
+#pomegues img
+{
+    width: 100%;
+    height: 180px;
+}
+#frioul
+{
+    width: 90%;
+    height: 240px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+}
+#frioul img
+{
+    width: 100%;
+    height: 180px;
+}
+#calanques
+{
+    width: 45%;
+    height: 520px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+    margin: 0px 25px 20px 0px;
+}
+#calanques img
+{
+    width: 100%;
+    height: 460px;
+} 
+#garde
+{
+    width: 90%;
+    height: 240px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+}
+#garde img
+{
+    width: 100%;
+    height: 180px;
+}
+#longchamp
+{
+    width: 90%;
+    height: 240px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+}
+#longchamp img
+{
+    width: 100%;
+    height: 180px;
+}
+article
+{
+    flex-direction: column;
+}
+/* 7)Footer */
+footer
+{
+    flex-wrap:nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+}

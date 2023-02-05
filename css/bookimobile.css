@@ -1,0 +1,792 @@
+
+/*Version mobile -768px maquette*/
+/* 1)Eléments principaux de la page */
+
+@media screen and (max-width: 768px) {
+    
+/* 1)Eléments principaux de la page */
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Raleway', Arial, sans-serif;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    background-color:#ffffff;
+    margin: 5px 5px 5px 5px;
+}
+
+header
+{
+    align-items: flex-start ;
+    margin: 0px 0px 0px 0px ;
+}
+#main
+{
+    display: flex;
+}
+#main #populaires
+{
+    order: 1 ;
+}
+#main #herbergements
+{
+    order: 2 ;
+}
+#main #activites
+{
+    order: 3 ;
+}
+/* 2)Navigation */
+#logobooki img
+{
+    display: flex;
+    width: 35%;
+    height: 15%;
+    object-fit: cover;
+    margin: 5% 10% 5% 35% ;
+}
+nav 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+nav a
+{
+    font-size: 120%;
+    flex-direction: row;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    padding-right: 17%;
+    padding-left: 19%;
+    color: #000000;
+    border-bottom: 3px solid #F2F2F2;
+    border-top: #FFFFFF;
+}
+
+nav :hover
+{
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 3%;
+    border-top: #FFFFFF;
+}
+
+
+/* 3)Header */
+
+header
+{
+    flex-wrap: wrap;
+   align-items: flex-start;
+   border: 1px solid #ffffff;
+   border-radius: 0px;
+   background-color:#ffffff;
+}
+header h1
+{
+    align-items: flex-start;
+    font-size: 160% ;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    background-color:#ffffff;
+    margin-left: 30px;
+    margin-top: 4%;
+}
+header h3
+{
+    color: #181818;
+    font-size: 130% ;
+    font-weight: normal ;
+    margin-left: 35px;
+}
+
+/* 4)Barre de recherche */
+
+#search
+{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 10px 10px 30px ; 
+}
+#search1 i
+{
+    height: 34px;
+    width: 90%;
+    font-size: 130%;
+    padding-top: 10px;
+    text-align: center;
+    border: 10px solid #F2F2F2;
+    border-bottom-left-radius: 15px ;
+    border-top-left-radius: 15px ;
+    background-color: #F2F2F2;
+
+}
+#search2 input 
+{
+    height: 62px;
+    width: 100%;
+    min-width: 150px;
+    font-size: 1.2em;
+    padding-right: 0px;
+    border: 1px solid #F2F2F2;
+    border-radius: 0px;
+    background-color: #FFFFFF; 
+    margin-left: 18px;
+}
+#search #search3 a
+{
+    display: none;
+    height: 35px;
+    width: 135px;
+    font-size: 1.4em;
+    padding-top: 5px;
+    color: #FFFFFF;
+    border: 10px solid #ffffff;
+    border-bottom-right-radius: 20px ;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    border-top-left-radius: 20px ;
+    background-color: #ffffff;
+}
+#search #search3 a:hover
+{
+    color: #ffffff;
+}
+#search #search4 a
+{
+    display: block;
+    height: 33px;
+    width: 45px;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding-top: 10px;
+    color: #FFFFFF;
+    border: 10px solid #0065FC;
+    border-radius: 20px ;
+    background-color: #0065FC;
+}
+#search
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#search1
+{
+    order: -4;
+}
+#search2
+{
+    order: -3;
+}
+#search3
+{
+    order: -1;
+}
+#search4
+{
+    order: -2;
+}
+/* 5)Filtres */
+
+#filtres 
+{
+    padding-left: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    background-color:#ffffff;
+    margin: 10px 10px 10px 10px ; 
+}
+#filtres h2
+{    
+    font-size: 1.4em ;
+    font-weight: bold;
+    padding-right: 400px;
+    padding-left: 0px;
+    margin: 10px 10px 10px 30px ; 
+}
+#economique 
+{
+    height: 50px;
+    width: 220px ;
+    position: relative;
+    border: 1px solid #DBDADA;
+    border-radius: 100px;
+    box-shadow: 0px 0px 1px #c4c4c4; 
+    margin: 10px 0px 10px 20px ;     
+}
+#economique h3
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    position: absolute;
+    top: 6px;
+    right: 20px;
+}
+
+#economique i
+{
+   font-size: 22px ;
+   color: #0065FC;
+   border: 16px solid #DEEBFF;
+   border-radius: 100px;
+   position: absolute;
+   top: -2px;
+   background-color: #DEEBFF;
+}
+#famille 
+{
+    height: 50px;
+    width: 160px ;
+    position: relative;
+    border: 1px solid #DBDADA;
+    border-radius: 100px;
+    box-shadow: 0px 0px 1px #c4c4c4;   
+    margin: 10px 0px 10px 20px ;      
+}
+#famille h3 
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    position: absolute;
+    top: 6px;
+    right: 20px;
+}
+
+#famille i
+{
+   font-size: 24px ;
+   color: #0065FC;
+   border: 16px solid #DEEBFF;
+   border-radius: 100px;
+   padding-right: 2px;
+   padding-left: 2px;
+   position: absolute;
+   top: -2px;
+   background-color: #DEEBFF;
+}
+#romantique
+{
+    height: 50px;
+    width: 220px ;
+    position: relative;
+    border: 1px solid #DBDADA;
+    border-radius: 100px;
+    box-shadow: 0px 0px 1px #c4c4c4;  
+    margin: 10px 0px 10px 20px ;      
+}
+#romantique h3
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    position: absolute;
+    top: 6px;
+    right: 25px;
+}
+
+#romantique i
+{
+    font-size: 22px ;
+    color: #0065FC;
+    border: 16px solid #DEEBFF;
+    border-radius: 100px;
+    position: absolute;
+    top: -2px;
+    background-color: #DEEBFF;
+}
+#animaux
+{
+    height: 50px;
+    width: 280px ;
+    position: relative;
+    border: 1px solid #DBDADA;
+    border-radius: 100px; 
+    box-shadow: 0px 0px 1px #c4c4c4;  
+    margin: 10px 0px 10px 20px ;    
+}
+#animaux h3
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    position: absolute;
+    top: 6px;
+    right: 25px;
+}
+
+#animaux i
+{
+    font-size: 22px ;
+    color: #0065FC;
+    border: 16px solid #DEEBFF;
+    border-radius: 100px;
+    position: absolute;
+    top: -2px;
+    background-color: #DEEBFF;
+}
+
+aside h3
+{
+    color : #000000;
+    font-size: 110% ;
+    font-weight: normal ; 
+    padding-top: 5px;
+    margin-left: 20px;
+}
+aside i
+{
+    height: 25px;
+    width: 30px ;
+    font-size: 1.2em ;
+    padding-top: 2px;
+    background-color: #ffffff;
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 100px;
+    margin: 5px 0px 5px 5px ; 
+    box-shadow: 0px 0px 2px #545454;
+}
+aside :hover
+{
+    color: #0065FC;
+}
+
+
+/* 6)Main */
+main
+{
+    display: flex;
+    flex-direction: column;
+}   
+#hebergements
+{
+    order: -2;
+}
+#populaires
+{
+    order: -3;
+}
+#activites
+{
+    order: -1;
+}
+
+/* a)Populaires */
+
+#populaires
+{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 10px solid #f2f2f2;
+    border-radius: 0px;
+    background-color:#F2F2F2;    
+    margin: 10px -10px 0px -30px ;  
+    padding-left: 11px;
+}
+#populaires h2
+{
+    font-size: 160%;
+    font-weight: bold; 
+    padding-right: 20%;
+    border: 10px solid #F2F2F2;  
+    border-radius: 30px;
+    background-color:#F2F2F2;  
+    margin: 15px 15px 15px 0px;
+}
+#populaires img
+{
+    width: 45%;
+    height: 190px;
+    border: 0px solid #ffffff;
+    border-radius: 0px;
+    border-top-left-radius: 25px ;
+    border-bottom-left-radius: 25px;
+    background-color:#FFFFFF;  
+}
+
+#soleil
+{
+    width: 85%;
+    height: 190px;
+    position: relative;
+    border: 6px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px 20px;
+}
+#soleil h4
+{
+    font-size: 1.2em ;
+    font-weight: bold;
+    margin: 20px 10px 0px 15px;
+}
+#soleil p
+{
+    font-size: 0.9em ; 
+    margin: 40px 10px 0px 15px;
+}
+#eau
+{
+    width: 85%;
+    height: 190px;
+    position: relative;
+    border: 6px  solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px 20px;
+}
+#eau h4
+{
+    font-size: 1.2em ;
+    font-weight: bold;
+    margin: 20px 10px 0px 15px;
+}
+#eau p
+{
+    font-size: 0.9em ; 
+    margin: 48px 10px 0px 15px;
+}
+#bleu
+{
+    width: 85%;
+    height: 190px;
+    position: relative;
+    border: 6px  solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 50px 20px;
+}
+#bleu h4
+{
+    font-size: 1.2em ;
+    font-weight: bold;
+    margin: 20px 10px 0px 15px;
+}
+#bleu  p
+{
+    font-size: 0.9em ; 
+    margin: 40px 10px 0px 15px;
+}
+#populaires i
+{
+    color:#0065FC;
+    border: 0px solid #FFFFFF;
+    border-radius: 0px;
+    background-color:#FFFFFF;   
+}
+#populaires span i
+{
+    position: absolute;
+    font-size: 0.9em ; 
+    top: 32px;
+    left: 78px;
+    color:#c1c1c1;
+    border: 0px solid #FFFFFF;
+    border-radius: 0px;
+    background-color:#FFFFFF;   
+}
+#etoile i
+{
+    font-size: 1.5em ; 
+    color:#181818 ;
+    border: 0px solid #F2F2F2;
+    border-radius: 0px;
+    background-color: #F2F2F2;  
+}
+
+/* b)Hebergements */
+
+#hebergements
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 10px solid #ffffff;
+    border-radius: 30px;
+    background-color:#FFFFFF;   
+    margin: 0px 0px 0px 0px ;  
+}
+#hebergements h2
+{
+    font-size: 160%;
+    font-weight: bold; 
+    border: 10px solid #ffffff;
+    border-radius: 30px;
+    background-color:#FFFFFF;   
+    margin: 20px 10px 10px -70px ;
+}
+#hebergements  h4
+{
+    font-size: 125%;
+    margin: 5px 25px 10px 25px;
+}
+#hebergements p
+{
+    font-size: 100%;
+    margin: 5px 25px 5px 25px;
+}
+
+#hebergements img
+{
+    width: 100%;
+    height: 170px;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
+}
+#cannebiere
+{
+    width: 85%;
+    height: 42%;
+    border:4px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px -25px; 
+}    
+#port
+{
+    width: 85%;
+    height: 41%;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px -25px; 
+}
+#mouettes
+{
+    width: 85%;
+    height: 41%;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px -25px; 
+}
+#mer
+{
+    width: 85%;
+    height: 41%;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px -25px; 
+}
+#panier
+{
+    width: 85%;
+    height: 41%;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px -25px; 
+}
+#amina
+{
+    width: 85%;
+    height: 41%;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 20px 0px 0px -25px; 
+}
+#hebergements h5
+{
+    font-size: 1.2em ;  
+    color: #FFFFFF;
+    margin: 20px 10px 20px 10px ;  
+}
+/* c)Activites */
+article
+{
+    flex-direction: column;
+}
+#activites 
+{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border: 10px solid #FFFFFF;  
+    border-radius: 30px;
+    background-color:#FFFFFF;    
+    margin: 20px 0px 20px 0px ;  
+    padding-top: 1270px;
+}
+#activites h2
+{
+    font-size: 160%;
+    font-weight: bold; 
+    justify-content: center;
+    border: 10px solid #ffffff;
+    border-radius: 30px;
+    background-color:#FFFFFF;   
+    margin: 10px 0px 10px -150px ;
+}
+#activites h4
+{
+    font-size: 130%;
+    font-weight: bold;
+    margin: 10px 20px 10px 20px;
+}
+#activites img
+{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
+}
+#vieux
+{
+    width: 85%;
+    height: 270px;
+    border: 0px solid #ffffff;
+    border-radius: 30px;
+    background-color:#FFFFFF;   
+    margin: 5% 5% 1% 5% ;
+}
+#pomegues
+{
+    width: 85%;
+    height: 270px;
+    border: 0px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 5% 5% 1% 5% ;
+}
+#frioul
+{
+    width: 85%;
+    height: 270px;
+    border: 0px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;  
+    margin: 5% 5% 10% 5% ;
+}
+#calanques
+{
+    width: 85%;
+    height: 270px;
+    border: 0px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 5% 5% 1% 5% ; 
+}
+#garde
+{
+    width: 85%;
+    height: 270px;
+    border: 0px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;   
+    margin: 5% 5% 1% 5% ;
+}
+#longchamp
+{
+    width: 85%;
+    height: 270px;
+    border: 0px solid #ffffff;
+    border-radius: 25px;
+    background-color:#FFFFFF;  
+    margin: 5% 5% 10% 5% ;
+}
+
+/* 7)Footer */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    border: 10px solid #f2f2f2;
+    border-radius: 0px;
+    background-color:#F2F2F2;    
+    margin: 10px -20px 10px 0px ;
+}
+
+footer h1
+{
+    display: flex;
+    font-size: 1.4em ;
+    font-weight: bold;
+}
+
+footer h3
+{
+    display: flex;
+    font-size: 1.1em ;
+    font-weight: normal;
+}
+
+footer h4
+{
+    display: flex;
+    font-size: 1.1em ;
+    font-weight: normal;
+}
+#a_propos
+{
+    justify-content: left;
+    border: 10px solid #f2f2f2;
+    margin-left: 10% ;
+}
+#nos_hebergements
+{
+    border: 10px solid #f2f2f2;
+    margin-left:  10% ;
+}
+#assistance
+{
+    border: 10px solid #f2f2f2;
+    margin-left:  10% ;
+    padding-right: 11%;
+}
+@media screen and (max-width: 500px)
+{
+    nav a
+    {
+    font-size: 110%;
+    padding-left: 16%;
+    padding-right: 15%;
+    color: #000000;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 3%;
+    border-top: #FFFFFF;
+    }
+     #search1 i
+    {
+    height: 34px;
+    width: 25px;
+    font-size: 120%;
+    padding-top: 10px;
+    text-align: center;
+    border: 10px solid #F2F2F2;
+    border-bottom-left-radius: 15px ;
+    border-top-left-radius: 15px ;
+    background-color: #F2F2F2;
+    }
+    #search2 input 
+    {
+    margin-left: 0px;
+    min-width: 170px;
+    }
+    #search #search4 a
+    {
+    height: 33px;
+    width: 35px;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding-top: 10px;
+    color: #FFFFFF;
+    border: 10px solid #0065FC;
+    border-radius: 20px ;
+    background-color: #0065FC;
+    }
+}
+}
